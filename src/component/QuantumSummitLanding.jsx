@@ -1,21 +1,25 @@
-import React from 'react';
-import logo from '../assets/logo.svg';
-import chip from "../assets/chip.svg"
-import robot from "../assets/robot.svg"
-import atom from "../assets/atom.svg"
+import React from "react";
+import logo from "../assets/logo.svg";
+import chip from "../assets/chip.svg";
+import robot from "../assets/robot.svg";
+import atom from "../assets/atom.svg";
 export default function QuantumSummitLanding() {
   return (
     <div className="min-h-screen bg-gray-900 text-white relative overflow-hidden">
       {/* Background gradient circles */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-purple-600/30 blur-[120px]"></div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-purple-500/20 blur-[100px]"></div>
-      
+
       {/* Header */}
       <header className="relative z-10 flex flex-col sm:flex-row justify-between items-center px-4 sm:px-8 py-6 gap-4">
         <div className="flex items-center gap-3">
           <div className="bg-transparent flex items-center justify-center">
             <div className="flex items-center justify-center">
-              <img src={logo} alt="Logo" className="w-[20vw] sm:w-[12vw] lg:w-[8vw] h-auto object-contain" />
+              <img
+                src={logo}
+                alt="Logo"
+                className="w-[20vw] sm:w-[12vw] lg:w-[8vw] h-auto object-contain"
+              />
             </div>
           </div>
         </div>
@@ -33,30 +37,44 @@ export default function QuantumSummitLanding() {
       <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 pt-6 sm:pt-12">
         {/* University Title */}
         <div className="text-center mb-4 sm:mb-8">
-          <h2 className="text-xs sm:text-sm font-semibold tracking-wider">VIT BHOPAL UNIVERSITY</h2>
+          <h2 className="text-xs sm:text-sm font-semibold tracking-wider">
+            VIT BHOPAL UNIVERSITY
+          </h2>
         </div>
 
         {/* Hero Title */}
         <div className="text-center mb-4 sm:mb-6">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            The Summit for <span className="text-purple-400">Quantum</span>
+          <h1
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight
+               bg-gradient-to-br from-purple-300 to-purple-600 
+               bg-clip-text text-transparent"
+          >
+            The Summit for Quantum
             <br />
-            <span className="text-purple-400">Computing</span> Enthusiasts
+            Computing Enthusiasts
           </h1>
         </div>
 
         {/* Subtitle */}
         <div className="text-center mb-8 sm:mb-16">
           <p className="text-gray-300 text-xs sm:text-sm max-w-2xl mx-auto px-4">
-            Three day webinar focused ont sharing advancements in quantum Computing from the brightest mind in the Industry.
+            Three day webinar focused ont sharing advancements in quantum
+            Computing from the brightest mind in the Industry.
           </p>
+          <button className="m-2 border-2 bg-white text-black px-8 py-2 rounded-full border-2 border border-white">
+            Register Now
+          </button>
         </div>
 
         {/* Visual Content Container */}
         <div className="relative flex justify-center items-center min-h-[300px] sm:min-h-[400px] lg:min-h-[500px]">
           {/* Left Icon - Quantum Chip */}
-          <div className="absolute left-0 sm:left-4 lg:left-8 top-1/4 w-16 sm:w-24   transform -rotate-6 hover:rotate-0 transition-transform">
-            <img src={chip} alt="Quantum Chip" className="w-full h-full object-contain" />
+          <div className="absolute left-0 sm:left-4 lg:left-8 top-1/4 w-64 sm:w-48   transform -rotate-6 hover:rotate-0 transition-transform">
+            <img
+              src={chip}
+              alt="Quantum Chip"
+              className="w-full h-full object-contain"
+            />
           </div>
 
           {/* Center - AI Robot Head with circular background */}
@@ -71,24 +89,42 @@ export default function QuantumSummitLanding() {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-[240px] sm:w-[320px] lg:w-[400px] h-[240px] sm:h-[320px] lg:h-[400px] rounded-full border border-purple-500/40"></div>
             </div>
-            
+
             {/* Robot head image */}
             <div className="relative z-10 flex items-center justify-center">
-              <img src={robot} alt="AI Robot" className="w-[40vw] sm:w-[35vw] lg:w-[29vw] h-auto object-contain" />
+              <img
+                src={robot}
+                alt="AI Robot"
+                className="w-[40vw] sm:w-[35vw] lg:w-[29vw] h-auto object-contain"
+              />
             </div>
           </div>
 
           {/* Right Icon - Atom Symbol */}
-          <div className="absolute right-0 sm:right-4 lg:right-8 top-1/4 w-16 sm:w-24  transform rotate-12 hover:rotate-0 transition-transform">
-            <img src={atom} alt="Atom Symbol" className="w-full h-full object-contain" />
+          <div className="absolute right-0 sm:right-4 lg:right-8 top-1/4 w-64 sm:w-48   transform rotate-12 hover:rotate-0 transition-transform">
+            <img
+              src={atom}
+              alt="Atom Symbol"
+              className="w-full h-full object-contain"
+            />
           </div>
         </div>
       </main>
 
       {/* Code indicator in top right */}
       <div className="absolute top-6 right-4 sm:right-8 text-gray-500">
-        <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+        <svg
+          className="w-5 h-5 sm:w-6 sm:h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+          />
         </svg>
       </div>
     </div>
