@@ -69,7 +69,7 @@ export default function QuantumSummitLanding() {
         {/* Visual Content Container */}
         <div className="relative flex justify-center items-center min-h-[300px] sm:min-h-[400px] lg:min-h-[500px]">
           {/* Left Icon - Quantum Chip */}
-          <div className="absolute left-0 sm:left-4 lg:left-8 top-1/4 w-64 sm:w-48   transform -rotate-6 hover:rotate-0 transition-transform">
+          <div className="absolute left-0 sm:left-4 lg:left-8 top-1/4 w-20 sm:w-48   transform -rotate-6 hover:rotate-0 transition-transform">
             <img
               src={chip}
               alt="Quantum Chip"
@@ -101,7 +101,7 @@ export default function QuantumSummitLanding() {
           </div>
 
           {/* Right Icon - Atom Symbol */}
-          <div className="absolute right-0 sm:right-4 lg:right-8 top-1/4 w-64 sm:w-48   transform rotate-12 hover:rotate-0 transition-transform">
+          <div className="absolute right-0 sm:right-4 lg:right-8 top-1/4 w-20 sm:w-48   transform rotate-12 hover:rotate-0 transition-transform">
             <img
               src={atom}
               alt="Atom Symbol"
