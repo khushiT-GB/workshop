@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../assets/logo.svg';
 import chip from "../assets/chip.svg"
+import robot from "../assets/robot.svg"
+import atom from "../assets/atom.svg"
 export default function QuantumSummitLanding() {
   return (
     <div className="min-h-screen bg-gray-900 text-white relative overflow-hidden">
@@ -28,11 +30,11 @@ export default function QuantumSummitLanding() {
         </div>
       </header>
 
-      {/* Main Content */}
+       {/* Main Content */}
       <main className="relative z-10 max-w-7xl mx-auto px-8 pt-12">
         {/* University Title */}
         <div className="text-center mb-8">
-          <h2 className="text-lg font-bold tracking-wider">VIT BHOPAL UNIVERSITY</h2>
+          <h2 className="text-sm font-semibold tracking-wider">VIT BHOPAL UNIVERSITY</h2>
         </div>
 
         {/* Hero Title */}
@@ -46,7 +48,7 @@ export default function QuantumSummitLanding() {
 
         {/* Subtitle */}
         <div className="text-center mb-16">
-          <p className="text-white-700 text-md max-w-2xl mx-auto">
+          <p className="text-gray-300 text-sm max-w-2xl mx-auto">
             Three day webinar focused ont sharing advancements in quantum Computing from the brightest mind in the Industry.
           </p>
         </div>
@@ -54,7 +56,7 @@ export default function QuantumSummitLanding() {
         {/* Visual Content Container */}
         <div className="relative flex justify-center items-center min-h-[500px]">
           {/* Left Icon - Quantum Chip */}
-          <div className="absolute left-8 top-1/20  transform -rotate-6 hover:rotate-0 transition-transform">
+          <div className="absolute left-8  transform -rotate-6 hover:rotate-0 transition-transform">
             <img src={chip} alt="Quantum Chip" className="w-full h-full object-contain" />
           </div>
 
@@ -71,57 +73,29 @@ export default function QuantumSummitLanding() {
               <div className="w-[400px] h-[400px] rounded-full border border-purple-500/40"></div>
             </div>
             
-            {/* Robot head */}
-            <div className="relative z-10 w-80 h-96 bg-gradient-to-br from-purple-600 to-purple-800 rounded-t-full rounded-b-3xl shadow-2xl">
-              {/* Head details */}
-              <div className="absolute top-12 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 shadow-lg flex items-center justify-center">
-                <div className="w-24 h-24 rounded-full bg-purple-700 border-4 border-purple-500"></div>
-              </div>
-              
-              {/* Headphone/Ear piece */}
-              <div className="absolute top-8 -right-4 w-24 h-32 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full shadow-xl">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-purple-500 shadow-lg"></div>
-              </div>
-              
-              {/* Face lines */}
-              <div className="absolute bottom-20 left-4 right-4">
-                <div className="h-0.5 bg-purple-400/30 mb-2"></div>
-                <div className="h-0.5 bg-purple-400/30 mb-2"></div>
-              </div>
+            {/* Robot head image */}
+            <div className="relative z-10 flex items-center justify-center">
+              <img src={robot} alt="AI Robot" className="w-[29vw] h-full object-contain" />
             </div>
           </div>
 
           {/* Right Icon - Atom Symbol */}
-          <div className="absolute right-8 top-1/4 w-32 h-32 flex items-center justify-center transform rotate-12 hover:rotate-0 transition-transform">
-            <div className="relative">
-              {/* Electron orbits */}
-              <div className="absolute inset-0 border-2 border-purple-400 rounded-full w-28 h-28 transform rotate-45"></div>
-              <div className="absolute inset-0 border-2 border-purple-400 rounded-full w-28 h-28 transform -rotate-45"></div>
-              <div className="absolute inset-0 border-2 border-purple-400 rounded-full w-28 h-28"></div>
-              
-              {/* Nucleus */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-purple-400 rounded-full shadow-lg"></div>
-              
-              {/* Electrons */}
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3 h-3 bg-purple-300 rounded-full"></div>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 bg-purple-300 rounded-full"></div>
-              <div className="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-purple-300 rounded-full"></div>
-              <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-purple-300 rounded-full"></div>
-            </div>
+          <div className="absolute right-0 transform rotate-12 hover:rotate-0 transition-transform">
+            <img src={atom} alt="Atom Symbol" className="w-full h-full object-contain" />
           </div>
 
           {/* Register Button */}
-          <div className="absolute bottom-0 right-16">
+          {/* <div className="absolute bottom-0  right-16 mb-2">
             <button className="px-8 py-3 bg-white text-gray-900 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-xl">
               Register Now
             </button>
-          </div>
+          </div> */}
         </div>
 
         {/* Footer text */}
-        <div className="absolute bottom-8 left-8 text-xs text-gray-500">
+        {/* <div className="absolute bottom-8 left-8 text-xs text-white-700 font-bold">
           VIT BHOPAL UNIVERSITY
-        </div>
+        </div> */}
       </main>
 
       {/* Code indicator in top right */}
