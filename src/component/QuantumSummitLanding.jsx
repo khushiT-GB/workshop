@@ -3,6 +3,21 @@ import logo from "../assets/logo.svg";
 import chip from "../assets/chip.svg";
 import robot from "../assets/robot.svg";
 import atom from "../assets/atom.svg";
+import event from "../assets/event.pdf";
+import flyer from "../assets/flyer.pdf";
+
+const handleRedirectAbout = () => {
+  window.location.href = " https://vitbhopal.ac.in/leadership/";
+};
+const handleRedirect = () => {
+  window.location.href = "https://forms.gle/1kBQs3xm6Bg7fYkz8";
+};
+const handleRedirectSchedule = () => {
+  window.open(event, "_blank");
+};
+const handleRedirectEvent = () => {
+  window.open(flyer, "_blank");
+};
 export default function QuantumSummitLanding() {
   return (
     <div className="min-h-screen bg-gray-900 text-white relative overflow-hidden">
@@ -24,11 +39,23 @@ export default function QuantumSummitLanding() {
           </div>
         </div>
         <div className="flex gap-3">
-          <button className="px-3 sm:px-5 py-2 border border-white rounded-full text-xs sm:text-sm hover:bg-white hover:text-gray-900 transition-colors">
+          <button
+            className="px-3 sm:px-5 py-2 border border-white rounded-full text-xs sm:text-sm hover:bg-white hover:text-gray-900 transition-colors"
+            onClick={handleRedirectAbout}
+          >
+            About
+          </button>
+          <button
+            className="px-3 sm:px-5 py-2 border border-white rounded-full text-xs sm:text-sm hover:bg-white hover:text-gray-900 transition-colors"
+            onClick={handleRedirectEvent}
+          >
             Event Overview
           </button>
-          <button className="px-3 sm:px-5 py-2 border border-white rounded-full text-xs sm:text-sm hover:bg-white hover:text-gray-900 transition-colors">
-            About
+          <button
+            className="px-3 sm:px-5 py-2 border border-white rounded-full text-xs sm:text-sm hover:bg-white hover:text-gray-900 transition-colors"
+            onClick={handleRedirectSchedule}
+          >
+            Schedule
           </button>
         </div>
       </header>
@@ -61,7 +88,10 @@ export default function QuantumSummitLanding() {
             Three day webinar focused ont sharing advancements in quantum
             Computing from the brightest mind in the Industry.
           </p>
-          <button className="m-2 border-2 bg-white text-black px-8 py-2 rounded-full border-2 border border-white">
+          <button
+            className="m-2 border-2 bg-white text-black px-8 py-2 rounded-full border-2 border border-white"
+            onClick={handleRedirect}
+          >
             Register Now
           </button>
         </div>
@@ -69,7 +99,7 @@ export default function QuantumSummitLanding() {
         {/* Visual Content Container */}
         <div className="relative flex justify-center items-center min-h-[300px] sm:min-h-[400px] lg:min-h-[500px]">
           {/* Left Icon - Quantum Chip */}
-          <div className="absolute left-0 sm:left-4 lg:left-8 top-1/4 w-20 sm:w-48   transform -rotate-6 hover:rotate-0 transition-transform">
+          <div className="absolute left-0 sm:left-4 lg:left-8 top-1/4 w-64 sm:w-48   transform -rotate-6 hover:rotate-0 transition-transform">
             <img
               src={chip}
               alt="Quantum Chip"
@@ -101,7 +131,7 @@ export default function QuantumSummitLanding() {
           </div>
 
           {/* Right Icon - Atom Symbol */}
-          <div className="absolute right-0 sm:right-4 lg:right-8 top-1/4 w-20 sm:w-48   transform rotate-12 hover:rotate-0 transition-transform">
+          <div className="absolute right-0 sm:right-4 lg:right-8 top-1/4 w-64 sm:w-48   transform rotate-12 hover:rotate-0 transition-transform">
             <img
               src={atom}
               alt="Atom Symbol"
