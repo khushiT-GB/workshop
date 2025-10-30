@@ -1,6 +1,9 @@
 import React from "react";
-
-const SpeakerCard = ({ image, name, showInfo = true, registerLink }) => {
+import adarsh from "../assets/adarsh.jpeg";
+import somya from "../assets/somya.jpeg";
+import khushi from "../assets/khushi.jpeg";
+import mokshad from "../assets/mokshad.jpeg";
+const SpeakerCard = ({ image, name, showInfo = true, info, registerLink }) => {
   const handleRegisterClick = (e) => {
     e.stopPropagation();
     if (registerLink) {
@@ -30,20 +33,7 @@ const SpeakerCard = ({ image, name, showInfo = true, registerLink }) => {
         {name && <h3 className="text-xl font-semibold mb-2">{name}</h3>}
         {showInfo && (
           <button className="flex items-center text-sm font-medium hover:underline">
-            Info
-            <svg
-              className="w-4 h-4 ml-1"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
+            {info}
           </button>
         )}
       </div>
@@ -56,38 +46,43 @@ const StudentVolunteers = () => {
   const organizers = [
     {
       id: 1,
-      name: "",
-      image: null,
+      name: "Khushi Tiwary",
+      image: khushi,
       showInfo: true,
+      info: "UI/UX Designer",
       registerLink: "https://example.com/register",
     },
     {
       id: 2,
-      name: "Dr. Phani Kumar",
-      image: null,
+      name: "Somya Sharma",
+      image: somya,
       showInfo: true,
+      info: "Advertising",
       registerLink: "https://example.com/register",
     },
     {
       id: 3,
-      name: "",
-      image: null,
+      name: "Adarsh Pratap Singh",
+      image: adarsh,
       showInfo: true,
+      info: "Full Stack Developer",
       registerLink: "https://example.com/register",
     },
 
     {
       id: 4,
-      name: "Dr. Xavier Waintal",
-      image: null,
-      showInfo: false,
+      name: "Mokshad Bunde",
+      image: mokshad,
+      showInfo: true,
+      info: "UI/UX Designer",
       registerLink: "https://example.com/register",
     },
     {
       id: 5,
-      name: "Dr. Xavier Waintal",
+      name: "Ankshit",
       image: null,
-      showInfo: false,
+      showInfo: true,
+      info: "Backend Developer",
       registerLink: "https://example.com/register",
     },
   ];
@@ -111,6 +106,7 @@ const StudentVolunteers = () => {
             name={organizer.name}
             showInfo={organizer.showInfo}
             registerLink={organizer.registerLink}
+            info={organizer.info}
           />
         ))}
       </div>

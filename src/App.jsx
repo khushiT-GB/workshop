@@ -21,16 +21,12 @@ function App() {
       <QuantumSummitLanding />
       <AffiliationsCarousel />
       <Highlights />
-
       <EventSchedule />
       <Organizers />
       <OurSpeakers />
-
       <PhotoGallery />
       <StudentVolunteers />
-
       <AboutUs />
-
       <Footer />
     </>
   );

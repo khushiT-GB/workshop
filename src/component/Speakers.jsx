@@ -1,6 +1,13 @@
 import React from "react";
+import ankur from "../assets/ankur.jpeg";
+import manisha from "../assets/manisha.jpeg";
+import phani from "../assets/phalani.jpeg";
+import xavier from "../assets/xavier.jpeg";
+import pranav from "../assets/pranav.jpeg";
+import soumya from "../assets/soumya.jpeg";
+import rukshan from "../assets/rukshan.jpeg";
 
-const SpeakerCard = ({ image, name, showInfo = true }) => {
+const SpeakerCard = ({ image, name, showInfo = true, info }) => {
   return (
     <div className="relative rounded-3xl overflow-hidden group cursor-pointer">
       <div className="aspect-[3/4] bg-gray-300">
@@ -23,20 +30,7 @@ const SpeakerCard = ({ image, name, showInfo = true }) => {
         {name && <h3 className="text-xl font-semibold mb-2">{name}</h3>}
         {showInfo && (
           <button className="flex items-center text-sm font-medium hover:underline">
-            Info
-            <svg
-              className="w-4 h-4 ml-1"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
+            {info}
           </button>
         )}
       </div>
@@ -48,27 +42,52 @@ const OurSpeakers = () => {
   const speakers = [
     {
       id: 1,
-      name: "",
-      image: null,
+      name: "Dr.Ankur Raina",
+      image: ankur,
       showInfo: true,
+      info: "Indian Institute of Science Education and Research Bhopal, India",
     },
     {
       id: 2,
-      name: "Dr. Phani Kumar",
-      image: null,
+      name: "Dr. Phani Kumar Peddibhotla",
+      image: phani,
       showInfo: true,
+      info: "Indian Institute of Science Education and Research Bhopal, India",
     },
     {
       id: 3,
-      name: "",
-      image: null,
+      name: "Dr. Xavier Waintal",
+      image: xavier,
       showInfo: true,
+      info: "Director of Research CEA France",
     },
     {
       id: 4,
-      name: "Dr. Xavier Waintal",
-      image: null,
-      showInfo: false,
+      name: "Dr. Manisha Nene",
+      image: manisha,
+      showInfo: true,
+      info: "Defence Institute of Advanced Technology (DIAT), Pune, India",
+    },
+    {
+      id: 5,
+      name: "Dr. Pranav Mundada",
+      image: pranav,
+      showInfo: true,
+      info: "Head of Hardware Automation and Integration, Q-CTRL, USA",
+    },
+    {
+      id: 6,
+      name: "Mr. Soumya Dey",
+      image: soumya,
+      showInfo: true,
+      info: "R&D team Lead,Keysight Infini,India",
+    },
+    {
+      id: 7,
+      name: "Dr. Rukshan-ul-haq",
+      image: rukshan,
+      showInfo: true,
+      info: "CEO, Chinar Quantum AI, India",
     },
   ];
 
@@ -89,6 +108,7 @@ const OurSpeakers = () => {
             image={speaker.image}
             name={speaker.name}
             showInfo={speaker.showInfo}
+            info={speaker.info}
           />
         ))}
       </div>

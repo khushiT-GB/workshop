@@ -1,6 +1,11 @@
 import React from "react";
+import geetanjli from "../assets/geetanjli.jpeg";
+import hemant from "../assets/hemant.jpeg";
+import abhinav from "../assets/abhinav.jpeg";
+import ambe from "../assets/ambe.jpeg";
+import rajdeep from "../assets/rajdeep.jpeg";
 
-const SpeakerCard = ({ image, name, showInfo = true, registerLink }) => {
+const SpeakerCard = ({ image, name, showInfo = true, info, registerLink }) => {
   const handleRegisterClick = (e) => {
     e.stopPropagation();
     if (registerLink) {
@@ -30,20 +35,7 @@ const SpeakerCard = ({ image, name, showInfo = true, registerLink }) => {
         {name && <h3 className="text-xl font-semibold mb-2">{name}</h3>}
         {showInfo && (
           <button className="flex items-center text-sm font-medium hover:underline">
-            Info
-            <svg
-              className="w-4 h-4 ml-1"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
+            {info}
           </button>
         )}
       </div>
@@ -56,30 +48,44 @@ const Organizers = () => {
   const organizers = [
     {
       id: 1,
-      name: "",
-      image: null,
+      name: "Dr. Hemant K. Nashine",
+      image: hemant,
       showInfo: true,
+      info: "Chairperson, Dean SASL",
       registerLink: "https://example.com/register",
     },
     {
       id: 2,
-      name: "Dr. Phani Kumar",
-      image: null,
+      name: "Dr. Geetanjali Giri",
+      image: geetanjli,
       showInfo: true,
+      info: "Organizing Head",
       registerLink: "https://example.com/register",
     },
     {
       id: 3,
-      name: "",
-      image: null,
+      name: "Dr. Rajdeep Singh Payal",
+      image: rajdeep,
       showInfo: true,
+      info: "Resources Head",
+
       registerLink: "https://example.com/register",
     },
     {
       id: 4,
-      name: "Dr. Xavier Waintal",
-      image: null,
-      showInfo: false,
+      name: "Dr. Ambe Verma",
+      image: ambe,
+      showInfo: true,
+      info: "Design Head",
+
+      registerLink: "https://example.com/register",
+    },
+    {
+      id: 5,
+      name: "Dr. Abhinav Kumar",
+      image: abhinav,
+      showInfo: true,
+      info: "Outreach Head",
       registerLink: "https://example.com/register",
     },
   ];
@@ -103,6 +109,7 @@ const Organizers = () => {
             name={organizer.name}
             showInfo={organizer.showInfo}
             registerLink={organizer.registerLink}
+            info={organizer.info}
           />
         ))}
       </div>

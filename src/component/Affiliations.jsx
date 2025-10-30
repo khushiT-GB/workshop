@@ -6,6 +6,7 @@ import diat from "../assets/diat.png";
 import isserb from "../assets/iiser.png";
 import q from "../assets/q.png";
 import vit from "../assets/vit.png";
+
 export default function AffiliationsCarousel() {
   const [isPaused, setIsPaused] = useState(false);
 
@@ -48,9 +49,6 @@ export default function AffiliationsCarousel() {
     },
   ];
 
-  // Duplicate logos for seamless infinite scroll
-  const duplicatedLogos = [...affiliations, ...affiliations, ...affiliations];
-
   return (
     <div className="min-h-screen w-screen overflow-hidden bg-gradient-to-br from-black to-blue-900 relative flex items-center justify-center py-12 sm:py-16 md:py-20">
       {/* Animated flowing blobs */}
@@ -86,85 +84,33 @@ export default function AffiliationsCarousel() {
         .animation-delay-4000 {
           animation-delay: 1s;
         }
-
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-33.333%);
-          }
-        }
-
-        .animate-scroll {
-          animation: scroll 30s linear infinite;
-        }
-
-        .animate-scroll.paused {
-          animation-play-state: paused;
-        }
       `}</style>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16 md:mb-20">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-widest mb-4">
-            AFFILIATIONS
+            JOIN US WITH
           </h1>
           <p className="text-white/80 text-sm sm:text-base md:text-lg">
             Our Trusted Partners & Collaborators
           </p>
         </div>
 
-        {/* Carousel Container */}
-        <div className="relative">
-          {/* Gradient Overlays for fade effect */}
-          <div className="absolute left-0 top-0 bottom-0 w-20 sm:w-32 md:w-40 bg-gradient-to-r from-black via-black/50 to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-20 sm:w-32 md:w-40 bg-gradient-to-l from-black via-black/50 to-transparent z-10 pointer-events-none"></div>
-
-          {/* Carousel Track */}
-          <div className="overflow-hidden">
+        {/* Static Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
+          {affiliations.map((affiliation) => (
             <div
-              className={`flex animate-scroll ${isPaused ? "paused" : ""}`}
-              onMouseEnter={() => setIsPaused(true)}
-              onMouseLeave={() => setIsPaused(false)}
+              key={affiliation.id}
+              className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-6 sm:p-8 md:p-10 hover:bg-white/20 hover:border-purple-400/50 transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-purple-500/30 aspect-video flex items-center justify-center"
             >
-              {duplicatedLogos.map((affiliation, index) => (
-                <div
-                  key={`${affiliation.id}-${index}`}
-                  className="flex-shrink-0 mx-4 sm:mx-6 md:mx-8 lg:mx-10"
-                >
-                  <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-6 sm:p-8 md:p-10 hover:bg-white/20 hover:border-purple-400/50 transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-purple-500/30 w-40 sm:w-48 md:w-56 lg:w-64 h-24 sm:h-28 md:h-32 flex items-center justify-center">
-                    <img
-                      src={affiliation.logo}
-                      alt={affiliation.name}
-                      className="max-w-full max-h-full object-contain filter brightness-0 invert opacity-90 hover:opacity-100 transition-opacity duration-300"
-                    />
-                  </div>
-                </div>
-              ))}
+              <img
+                src={affiliation.logo}
+                alt={affiliation.name}
+                className="max-w-full max-h-full object-contain filter brightness-0 invert opacity-90 hover:opacity-100 transition-opacity duration-300"
+              />
             </div>
-          </div>
-        </div>
-
-        {/* Info Text */}
-
-        {/* Optional: Logo Grid for Mobile (Alternative View) */}
-        <div className="mt-12 sm:mt-16 md:hidden">
-          <div className="grid grid-cols-2 gap-4">
-            {affiliations.map((affiliation) => (
-              <div
-                key={affiliation.id}
-                className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-6 hover:bg-white/20 hover:border-purple-400/50 transition-all duration-300 aspect-video flex items-center justify-center"
-              >
-                <img
-                  src={affiliation.logo}
-                  alt={affiliation.name}
-                  className="max-w-full max-h-full object-contain filter brightness-0 invert opacity-90"
-                />
-              </div>
-            ))}
-          </div>
+          ))}
         </div>
       </div>
     </div>
