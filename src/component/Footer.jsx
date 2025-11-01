@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import logo from "../assets/logo.svg";
 export default function Footer() {
   return (
@@ -24,28 +24,28 @@ export default function Footer() {
             </h3>
             <div className="flex justify-center items-center gap-4 sm:gap-6">
               <a
-                href="#"
+                href="https://www.facebook.com/VITUnivBhopal/"
                 className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-white flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5 sm:w-6 sm:h-6" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/vit.bhopal"
                 className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-white flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5 sm:w-6 sm:h-6" />
               </a>
               <a
-                href="#"
+                href="https://x.com/VITBhopal"
                 className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-white flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="w-5 h-5 sm:w-6 sm:h-6" />
+                <Twitter className="w-5 h-5 sm:w-6 sm:h-6" />
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/channel/UCFJ1o0OgutcUvG3lOm70v_w"
                 className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-white flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300"
                 aria-label="YouTube"
               >

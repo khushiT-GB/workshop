@@ -3,6 +3,7 @@ import adarsh from "../assets/adarsh.jpeg";
 import somya from "../assets/somya.jpeg";
 import khushi from "../assets/khushi.jpeg";
 import mokshad from "../assets/mokshad.jpeg";
+import ankshit from "../assets/ankshit.jpg";
 const SpeakerCard = ({ image, name, showInfo = true, info, registerLink }) => {
   const handleRegisterClick = (e) => {
     e.stopPropagation();
@@ -77,14 +78,14 @@ const StudentVolunteers = () => {
       info: "UI/UX Designer",
       registerLink: "https://example.com/register",
     },
-    // {
-    //   id: 5,
-    //   name: "Ankshit",
-    //   image: null,
-    //   showInfo: true,
-    //   info: "Backend Developer",
-    //   registerLink: "https://example.com/register",
-    // },
+    {
+      id: 5,
+      name: "Ankshit",
+      image: ankshit,
+      showInfo: true,
+      info: "Backend Developer",
+      registerLink: "https://example.com/register",
+    },
   ];
 
   return (
