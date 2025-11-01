@@ -24,7 +24,7 @@ function App() {
       <EventSchedule />
       <Organizers />
       <OurSpeakers />
-      <PhotoGallery />
+      {/* <PhotoGallery /> */}
       <StudentVolunteers />
       <AboutUs />
       <Footer />
