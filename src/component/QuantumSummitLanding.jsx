@@ -33,7 +33,7 @@ export default function QuantumSummitLanding() {
               <img
                 src={logo}
                 alt="Logo"
-                className="w-[20vw] sm:w-[12vw] lg:w-[8vw] h-auto object-contain"
+                className="w-[20vw] sm:w-[12vw] lg:w-[16vw] h-auto object-contain"
               />
             </div>
           </div>
@@ -64,9 +64,10 @@ export default function QuantumSummitLanding() {
       <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 pt-6 sm:pt-12">
         {/* University Title */}
         <div className="text-center mb-4 sm:mb-8">
-          <h2 className="text-xs sm:text-sm font-semibold tracking-wider">
+          <h2 className="text-md sm:text-sm font-bold tracking-wider">
             VIT BHOPAL UNIVERSITY
           </h2>
+          <p>brings</p>
         </div>
 
         {/* Hero Title */}
@@ -76,17 +77,15 @@ export default function QuantumSummitLanding() {
                bg-gradient-to-br from-purple-300 to-purple-600 
                bg-clip-text text-transparent"
           >
-            The Summit for Quantum
-            <br />
-            Computing Enthusiasts
+            International Workshop <br /> on Quantum Computing
           </h1>
         </div>
 
         {/* Subtitle */}
         <div className="text-center mb-8 sm:mb-16">
           <p className="text-gray-300 text-xs sm:text-sm max-w-2xl mx-auto px-4">
-            Three day webinar focused ont sharing advancements in quantum
-            Computing from the brightest mind in the Industry.
+            Three days. One Quantum Leap - Theory, Innovation & Hands-on
+            Simulation
           </p>
           <button
             className="m-2 border-2 bg-white text-black px-8 py-2 rounded-full border-2 border border-white"

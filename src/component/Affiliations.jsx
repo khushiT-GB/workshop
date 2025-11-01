@@ -6,6 +6,7 @@ import diat from "../assets/diat.png";
 import isserb from "../assets/iiser.png";
 import q from "../assets/q.png";
 import vit from "../assets/vit.png";
+import temp from "../assets/temp.png";
 
 export default function AffiliationsCarousel() {
   const [isPaused, setIsPaused] = useState(false);
@@ -30,7 +31,7 @@ export default function AffiliationsCarousel() {
     {
       id: 4,
       name: "Affiliation 4",
-      logo: cea,
+      logo: temp,
     },
     {
       id: 5,
@@ -102,12 +103,12 @@ export default function AffiliationsCarousel() {
           {affiliations.map((affiliation) => (
             <div
               key={affiliation.id}
-              className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-6 sm:p-8 md:p-10 hover:bg-white/20 hover:border-purple-400/50 transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-purple-500/30 aspect-video flex items-center justify-center"
+              className="backdrop-blur-md bg-white border border-white/20 rounded-2xl p-6 sm:p-8 md:p-10 hover:bg-white/20 hover:border-purple-400/50 transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-purple-500/30 aspect-video flex items-center justify-center"
             >
               <img
                 src={affiliation.logo}
                 alt={affiliation.name}
-                className="max-w-full max-h-full object-contain filter brightness-0 invert opacity-90 hover:opacity-100 transition-opacity duration-300"
+                className="max-w-full max-h-full object-contain  opacity-90 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
           ))}

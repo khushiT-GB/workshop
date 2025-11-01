@@ -77,14 +77,14 @@ const StudentVolunteers = () => {
       info: "UI/UX Designer",
       registerLink: "https://example.com/register",
     },
-    {
-      id: 5,
-      name: "Ankshit",
-      image: null,
-      showInfo: true,
-      info: "Backend Developer",
-      registerLink: "https://example.com/register",
-    },
+    // {
+    //   id: 5,
+    //   name: "Ankshit",
+    //   image: null,
+    //   showInfo: true,
+    //   info: "Backend Developer",
+    //   registerLink: "https://example.com/register",
+    // },
   ];
 
   return (

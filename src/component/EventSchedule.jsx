@@ -1,7 +1,7 @@
 export default function EventSchedule() {
   const events = [
     {
-      title: ["Foundations of", "Quantum Computing", "(Beginner-Friendly)"],
+      title: ["Foundations of", "Quantum Computing"],
       date: "06 November",
       year: "2025",
       time: "1:15PM to 4:15PM",
@@ -13,7 +13,7 @@ export default function EventSchedule() {
       ],
     },
     {
-      title: ["Advanced Quantum", "Computing Concepts", "(Expert Session)"],
+      title: ["Advanced Quantum", "Computing Concepts"],
       date: "13 November",
       year: "2025",
       time: "2:00PM to 5:30PM",
@@ -87,9 +87,8 @@ export default function EventSchedule() {
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 tracking-widest px-2">
           EVENT SCHEDULE
         </h1>
-        <div className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-light text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16 px-4">
-          <span className="font-normal">Venue:</span> Auditorium 2, First Floor,
-          Academic Building II, VIT Bhopal
+        <div className="text-white font-bold text-lg sm:text-lg md:text-lg lg:text-lg  text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16 px-4">
+          Venue: Auditorium 2, First Floor, Academic Building II, VIT Bhopal
         </div>
 
         {/* Events Container */}
@@ -102,17 +101,19 @@ export default function EventSchedule() {
               {/* Left Card */}
               <div className="w-full lg:w-80 lg:min-w-[280px] xl:min-w-[320px] backdrop-blur-md bg-black/50 border border-white/10 rounded-full px-6 sm:px-8 py-8 sm:py-10 text-center hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 flex flex-col justify-center">
                 <div className="text-white text-sm sm:text-base font-normal leading-tight mb-3 sm:mb-4">
+                  {event.date}
+                </div>
+                <div className="text-white/80 font-semibold text-xs sm:text-sm mb-1">
+                  {event.year}
+                </div>
+                <div className="text-white/80 font-semibold text-xs sm:text-sm mb-2">
+                  {event.time}
+                </div>
+                <div className="text-white/60 text-xs">
                   {event.title.map((line, i) => (
                     <div key={i}>{line}</div>
                   ))}
                 </div>
-                <div className="text-white/80 font-semibold text-xs sm:text-sm mb-1">
-                  {event.date}
-                </div>
-                <div className="text-white/80 font-semibold text-xs sm:text-sm mb-2">
-                  {event.year}
-                </div>
-                <div className="text-white/60 text-xs">{event.time}</div>
               </div>
 
               {/* Right Card */}
