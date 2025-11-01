@@ -1,9 +1,9 @@
 import React from "react";
-import geetanjli from "../assets/geetanjli.jpeg";
-import hemant from "../assets/hemant.jpeg";
-import abhinav from "../assets/abhinav.jpeg";
-import ambe from "../assets/ambe.jpeg";
-import rajdeep from "../assets/rajdeep.jpeg";
+import geetanjli from "../assets/geetanjli.jpg";
+import hemant from "../assets/hemant.jpg";
+import abhinav from "../assets/abhinav.jpg";
+import ambe from "../assets/ambe.jpg";
+import rajdeep from "../assets/rajdeep.jpg";
 
 const SpeakerCard = ({ image, name, showInfo = true, info, registerLink }) => {
   const handleRegisterClick = (e) => {
