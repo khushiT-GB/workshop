@@ -52,8 +52,8 @@ export default function Highlights() {
 
         {/* Cards Container */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16 md:mb-20 w-full max-w-[90vw] sm:max-w-[85vw] md:max-w-[80vw] lg:w-[75vw]">
-          {/* Left Card */}
-          <div className="backdrop-blur-md bg-black/50 border border-white/10 rounded-lg p-6 sm:p-8 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 z-10 min-h-[25vh] sm:min-h-[30vh]">
+          {/* Top Card (Join Us) - Spans 2 columns */}
+          <div className="backdrop-blur-md bg-black/50 border border-white/10 rounded-lg p-6 sm:p-8 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 z-10 min-h-[25vh] sm:min-h-[30vh] lg:col-span-2 flex flex-col items-center">
             <svg
               width="40"
               height="26"
@@ -80,10 +80,52 @@ export default function Highlights() {
             </div>
           </div>
 
-          {/* Right Card */}
+          {/* Bottom Left Card */}
           <div className="backdrop-blur-md bg-black/50 border border-white/10 rounded-lg p-6 sm:p-8 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 z-10 min-h-[25vh] sm:min-h-[30vh]">
             <svg
               width="40"
+              height="26"
+              viewBox="0 0 94 65"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="mb-4 sm:mb-6 w-10 h-auto sm:w-[54px]"
+            >
+              <path
+                d="M0 49.451C0 32.9673 3.07592 20.817 9.22775 13C16.1178 4.33333 27.3551 0 42.9398 0V20.3922C32.6047 20.3922 26.5349 25.915 24.7304 36.9608C24.0742 40.5294 23.7461 44.6928 23.7461 49.451V65H0L0 49.451ZM51.0602 49.451C51.0602 32.9673 54.1361 20.817 60.288 13C67.178 4.33333 78.4154 0 94 0V20.3922C83.6649 20.3922 77.5951 25.915 75.7906 36.9608C75.1344 40.5294 74.8063 44.6928 74.8063 49.451L74.8063 65L51.0602 65V49.451Z"
+                fill="white"
+              />
+            </svg>
+            <div className="text-white space-y-3 text-sm md:text-base">
+              <p>
+                <span className="font-semibold font-family-inter">
+                  What you will get ?
+                </span>{" "}
+              </p>
+              <ul className="space-y-2">
+                <li className="flex items-start">
+                  <span className="mr-2">•</span>
+                  <span>Certificate of Recognition</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">•</span>
+                  <span>Connect and Talk with Industry Experts</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">•</span>
+                  <span>Hands on Experience</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">•</span>
+                  <span>Q&A Session</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Bottom Right Card */}
+          <div className="backdrop-blur-md bg-black/50 border border-white/10 rounded-lg p-6 sm:p-8 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 z-10 min-h-[25vh] sm:min-h-[30vh]">
+            <svg
+              width="44"
               height="26"
               viewBox="0 0 94 65"
               fill="none"
