@@ -2,7 +2,7 @@ import React from "react";
 import adarsh from "../assets/adarsh.jpeg";
 import somya from "../assets/somya.jpeg";
 import khushi from "../assets/khushi.jpeg";
-import mokshad from "../assets/mokshad.jpeg";
+import mokshad from "../assets/mokshad.jpg";
 import ankshit from "../assets/ankshit.jpg";
 const SpeakerCard = ({ image, name, showInfo = true, info, registerLink }) => {
   const handleRegisterClick = (e) => {
