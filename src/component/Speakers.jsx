@@ -49,14 +49,14 @@ const OurSpeakers = () => {
       info: "Indian Institute of Science Education and Research Bhopal, India",
     },
     {
-      id: 2,
+      id: 3,
       name: "Dr. Ritajit Majumdar",
       image: ritajit,
       showInfo: true,
       info: "Research Scientist, IBM Quantum",
     },
     {
-      id: 3,
+      id: 2,
       name: "Dr. Phani Kumar Peddibhotla",
       image: phani,
       showInfo: true,
