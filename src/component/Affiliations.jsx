@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import keysight from "../assets/keysight.png";
-import cea from "../assets/cea.png";
+import cea from "../assets/cea.jpeg";
 import chinar from "../assets/chinar.png";
 import diat from "../assets/diat.png";
 import isserb from "../assets/iiser.png";
 import q from "../assets/q.png";
 import vit from "../assets/vit.png";
+import ibm from "../assets/ibm.png";
+
 import temp from "../assets/temp.png";
 
 export default function AffiliationsCarousel() {
@@ -21,7 +23,7 @@ export default function AffiliationsCarousel() {
     {
       id: 2,
       name: "Affiliation 2",
-      logo: keysight,
+      logo: ibm,
     },
     {
       id: 3,
@@ -31,7 +33,7 @@ export default function AffiliationsCarousel() {
     {
       id: 4,
       name: "Affiliation 4",
-      logo: temp,
+      logo: cea,
     },
     {
       id: 5,
@@ -41,7 +43,6 @@ export default function AffiliationsCarousel() {
     {
       id: 6,
       name: "Affiliation 6",
-      logo: diat,
     },
     {
       id: 7,
@@ -103,12 +104,22 @@ export default function AffiliationsCarousel() {
           {affiliations.map((affiliation) => (
             <div
               key={affiliation.id}
-              className="backdrop-blur-md bg-white border border-white/20 rounded-2xl p-6 sm:p-8 md:p-10 hover:bg-white/20 hover:border-purple-400/50 transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-purple-500/30 aspect-video flex items-center justify-center"
+              className={`
+                backdrop-blur-md border border-white/20 rounded-2xl 
+                hover:border-purple-400/50 transition-all duration-300 
+                hover:scale-110 hover:shadow-2xl hover:shadow-purple-500/30 
+                aspect-video flex items-center justify-center
+                ${
+                  affiliation.logo === cea
+                    ? "bg-[#B70F0C] p-4 sm:p-6 md:p-8" // Smaller padding for CEA
+                    : "bg-white hover:bg-white/20 p-6 sm:p-8 md:p-10" // Default padding
+                }
+              `}
             >
               <img
                 src={affiliation.logo}
                 alt={affiliation.name}
-                className="max-w-full max-h-full object-contain  opacity-90 hover:opacity-100 transition-opacity duration-300"
+                className="max-w-full max-h-full object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
           ))}

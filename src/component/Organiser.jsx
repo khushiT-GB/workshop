@@ -1,7 +1,7 @@
 import React from "react";
 import geetanjli from "../assets/geetanjli.jpg";
 import hemant from "../assets/hemant.jpg";
-import abhinav from "../assets/abhinav.jpeg";
+import abhinav from "../assets/abhinav.jpg";
 import ambe from "../assets/ambe.jpg";
 import rajdeep from "../assets/rajdeep.jpg";
 

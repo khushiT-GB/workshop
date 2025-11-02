@@ -87,7 +87,7 @@ export default function Footer() {
           {/* Logo Placeholder - Replace with actual logo */}
           <div className="flex items-center gap-3">
             {/* Circular Logo */}
-            <div className="w-24 h-12 sm:w-24 sm:h-14 md:w-16 md:h-16  border-white flex items-center justify-center">
+            <div className="w-32 h-12 sm:w-32 sm:h-14 md:w-32 md:h-16  border-white flex items-center justify-center">
               <img src={logo} />
             </div>
             {/* Text Logo */}

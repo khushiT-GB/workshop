@@ -6,6 +6,7 @@ import xavier from "../assets/xavier.jpeg";
 import pranav from "../assets/pranav.jpeg";
 import soumya from "../assets/soumya.jpeg";
 import rukshan from "../assets/rukshan.jpeg";
+import ritajit from "../assets/ritajit.jpeg";
 
 const SpeakerCard = ({ image, name, showInfo = true, info }) => {
   return (
@@ -49,41 +50,48 @@ const OurSpeakers = () => {
     },
     {
       id: 2,
+      name: "Dr. Ritajit Majumdar",
+      image: ritajit,
+      showInfo: true,
+      info: "Research Scientist, IBM Quantum",
+    },
+    {
+      id: 3,
       name: "Dr. Phani Kumar Peddibhotla",
       image: phani,
       showInfo: true,
       info: "Indian Institute of Science Education and Research Bhopal, India",
     },
     {
-      id: 3,
+      id: 4,
       name: "Dr. Xavier Waintal",
       image: xavier,
       showInfo: true,
       info: "Director of Research CEA France",
     },
     {
-      id: 4,
+      id: 5,
       name: "Dr. Manisha Nene",
       image: manisha,
       showInfo: true,
       info: "Defence Institute of Advanced Technology (DIAT), Pune, India",
     },
     {
-      id: 5,
+      id: 6,
       name: "Dr. Pranav Mundada",
       image: pranav,
       showInfo: true,
       info: "Head of Hardware Automation and Integration, Q-CTRL, USA",
     },
     {
-      id: 6,
+      id: 7,
       name: "Mr. Soumya Dey",
       image: soumya,
       showInfo: true,
       info: "R&D team Lead,Keysight Infini,India",
     },
     {
-      id: 7,
+      id: 8,
       name: "Dr. Rukshan-ul-haq",
       image: rukshan,
       showInfo: true,

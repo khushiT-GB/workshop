@@ -83,7 +83,7 @@ const StudentVolunteers = () => {
       name: "Ankshit",
       image: ankshit,
       showInfo: true,
-      info: "Co-Ordinator",
+      info: "Backend Developer",
       registerLink: "https://example.com/register",
     },
   ];
