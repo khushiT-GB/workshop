@@ -42,6 +42,7 @@ export default function AffiliationsCarousel() {
     },
     {
       id: 6,
+      logo: diat,
       name: "Affiliation 6",
     },
     {
