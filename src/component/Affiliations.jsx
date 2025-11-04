@@ -25,6 +25,7 @@ export default function AffiliationsCarousel() {
       name: "Affiliation 2",
       logo: ibm,
     },
+
     {
       id: 3,
       name: "Affiliation 3",
@@ -49,6 +50,11 @@ export default function AffiliationsCarousel() {
       id: 7,
       name: "Affiliation 7",
       logo: q,
+    },
+    {
+      id: 8,
+      name: "Affiliation 7",
+      logo: keysight,
     },
   ];
 
