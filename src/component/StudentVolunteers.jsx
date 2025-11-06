@@ -5,7 +5,7 @@ import khushi from "../assets/khushi.jpeg";
 import mokshad from "../assets/mokshad.jpg";
 import ankshit from "../assets/ankshit.jpg";
 import anushrav from "../assets/anushrav.jpeg";
-
+import aadyansh from "../assets/aadyansh.jpeg";
 const SpeakerCard = ({ image, name, showInfo = true, info, registerLink }) => {
   const handleRegisterClick = (e) => {
     e.stopPropagation();
@@ -94,6 +94,14 @@ const StudentVolunteers = () => {
       image: anushrav,
       showInfo: true,
       info: "Co-Ordinator",
+      registerLink: "https://example.com/register",
+    },
+    {
+      id: 7,
+      name: "Aadyansh Mishra",
+      image: aadyansh,
+      showInfo: true,
+      info: "Non-Work Team Lead",
       registerLink: "https://example.com/register",
     },
   ];

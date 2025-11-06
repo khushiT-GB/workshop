@@ -7,7 +7,8 @@ import pranav from "../assets/pranav.jpeg";
 import soumya from "../assets/soumya.jpeg";
 import rukshan from "../assets/rukshan.jpeg";
 import ritajit from "../assets/ritajit.jpeg";
-
+import shilpi from "../assets/shilpi.png";
+import anil from "../assets/anil.png";
 const SpeakerCard = ({ image, name, showInfo = true, info }) => {
   return (
     <div className="relative rounded-3xl overflow-hidden group cursor-pointer">
@@ -93,6 +94,20 @@ const OurSpeakers = () => {
     },
     {
       id: 8,
+      name: "Mr.Anil Pandey",
+      image: anil,
+      showInfo: true,
+      info: "Principal Software Engineer, Keysight Infini,India",
+    },
+    {
+      id: 9,
+      name: "Shilpi Singh",
+      image: shilpi,
+      showInfo: true,
+      info: "Application Development Engineer / Scientist, Keysight Infini,India",
+    },
+    {
+      id: 10,
       name: "Dr. Rukshan-ul-haq",
       image: rukshan,
       showInfo: true,
