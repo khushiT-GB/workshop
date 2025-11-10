@@ -61,7 +61,7 @@ const OurSpeakers = () => {
       name: "Dr. Ritajit Majumdar",
       image: ritajit,
       showInfo: true,
-      info: "RResearch Scientist,IBM Research India",
+      info: "Research Scientist,IBM Research India",
     },
 
     {
