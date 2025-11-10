@@ -95,8 +95,7 @@ const Organizers = () => {
       {/* Header */}
       <div className="max-w-7xl mx-auto mb-12">
         <h1 className="text-5xl md:text-6xl font-bold text-white">
-          {/* Our{" "} */}
-          <span className="text-emerald-400 italic font-serif">Organisers</span>
+          Our <span className="text-emerald-400 italic font-serif">Hosts</span>
         </h1>
       </div>
 

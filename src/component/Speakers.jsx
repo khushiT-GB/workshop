@@ -47,21 +47,21 @@ const OurSpeakers = () => {
       name: "Dr.Ankur Raina",
       image: ankur,
       showInfo: true,
-      info: "Indian Institute of Science Education and Research Bhopal, India",
+      info: "Assistant Professor,IISER, Bhopal",
     },
     {
       id: 2,
       name: "Dr. Phani Kumar Peddibhotla",
       image: phani,
       showInfo: true,
-      info: "Indian Institute of Science Education and Research Bhopal, India",
+      info: "Assistant Professor,IISER, Bhopal",
     },
     {
       id: 3,
       name: "Dr. Ritajit Majumdar",
       image: ritajit,
       showInfo: true,
-      info: "Research Scientist, IBM Quantum",
+      info: "RResearch Scientist,IBM Research India",
     },
 
     {
@@ -69,49 +69,49 @@ const OurSpeakers = () => {
       name: "Dr. Xavier Waintal",
       image: xavier,
       showInfo: true,
-      info: "Director of Research CEA France",
+      info: "Director of Research,CEA France",
     },
     {
       id: 5,
       name: "Dr. Manisha Nene",
       image: manisha,
       showInfo: true,
-      info: "Defence Institute of Advanced Technology (DIAT), Pune, India",
+      info: "Defence Institute of,Advanced Technology (DIAT), Pune, India",
     },
     {
       id: 6,
       name: "Dr. Pranav Mundada",
       image: pranav,
       showInfo: true,
-      info: "Head of Hardware Automation and Integration, Q-CTRL, USA",
+      info: "Head of Hardware,Automation & Integration Q-CTRL, USA",
     },
     {
       id: 7,
       name: "Mr. Soumya Dey",
       image: soumya,
       showInfo: true,
-      info: "R&D team Lead,Keysight,India",
+      info: "Senior R&D Manager,Keysight Technologies",
     },
     {
       id: 8,
       name: "Mr.Anil Pandey",
       image: anil,
       showInfo: true,
-      info: "Principal Software Engineer, Keysight ,India",
+      info: "Principal Software Engineer,Keysight Technologies",
     },
     {
       id: 9,
       name: "Shilpi Singh",
       image: shilpi,
       showInfo: true,
-      info: "Application Development Engineer / Scientist, Keysight ,India",
+      info: "Application Developer,Keysight Technologies",
     },
     {
       id: 10,
       name: "Dr. Rukshan-ul-haq",
       image: rukshan,
       showInfo: true,
-      info: "CEO, Chinar Quantum AI, India",
+      info: "CEO,Chinar Quantum AI,India",
     },
   ];
 
@@ -120,7 +120,10 @@ const OurSpeakers = () => {
       {/* Header */}
       <div className="max-w-7xl mx-auto mb-12">
         <h1 className="text-5xl md:text-6xl font-bold text-white">
-          Our <span className="text-cyan-400 italic font-serif">Speakers</span>
+          Our{" "}
+          <span className="text-cyan-400 italic font-serif">
+            Speakers & Organizers
+          </span>
         </h1>
       </div>
 
