@@ -90,7 +90,7 @@ const OurSpeakers = () => {
       name: "Mr. Soumya Dey",
       image: soumya,
       showInfo: true,
-      info: "R&D team Lead,Keysight Infini,India",
+      info: "R&D team Lead,Keysight,India",
     },
     {
       id: 8,
