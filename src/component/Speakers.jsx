@@ -97,14 +97,14 @@ const OurSpeakers = () => {
       name: "Mr.Anil Pandey",
       image: anil,
       showInfo: true,
-      info: "Principal Software Engineer, Keysight Infini,India",
+      info: "Principal Software Engineer, Keysight ,India",
     },
     {
       id: 9,
       name: "Shilpi Singh",
       image: shilpi,
       showInfo: true,
-      info: "Application Development Engineer / Scientist, Keysight Infini,India",
+      info: "Application Development Engineer / Scientist, Keysight ,India",
     },
     {
       id: 10,
