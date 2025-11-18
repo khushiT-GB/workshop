@@ -9,6 +9,7 @@ import rukshan from "../assets/rukshan.jpeg";
 import ritajit from "../assets/ritajit.jpeg";
 import shilpi from "../assets/shilpi.png";
 import anil from "../assets/anil.png";
+import vikas from "../assets/vikas.jpeg";
 const SpeakerCard = ({ image, name, showInfo = true, info }) => {
   return (
     <div className="relative rounded-3xl overflow-hidden group cursor-pointer">
@@ -112,6 +113,13 @@ const OurSpeakers = () => {
       image: rukshan,
       showInfo: true,
       info: "CEO,Chinar Quantum AI,India",
+    },
+    {
+      id: 11,
+      name: "Vikas Kumar",
+      image: vikas,
+      showInfo: true,
+      info: "Application Engineer (Photonics & Quantum),Infinipoint Technology Pvt. Ltd.",
     },
   ];
 

@@ -7,7 +7,7 @@ import isserb from "../assets/iiser.png";
 import q from "../assets/q.png";
 import vit from "../assets/vit.png";
 import ibm from "../assets/ibm.png";
-
+import infini from "../assets/infini.png";
 import temp from "../assets/temp.png";
 
 export default function AffiliationsCarousel() {
@@ -55,6 +55,11 @@ export default function AffiliationsCarousel() {
       id: 8,
       name: "Affiliation 7",
       logo: keysight,
+    },
+    {
+      id: 9,
+      name: "Affiliation 7",
+      logo: infini,
     },
   ];
 
